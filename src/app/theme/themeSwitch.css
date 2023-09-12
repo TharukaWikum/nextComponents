@@ -1,0 +1,18 @@
+:root {
+  --custom-dark-theme-color: #132F4C;
+}
+
+/* Define styles for dark theme */
+[data-theme="dark"] {
+  --primary-background-color: var(--custom-dark-theme-color);
+  /* Add other dark theme styles here */
+}
+
+.theme-switch-container {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 9999; /* Ensure it's above other content */
+  }
+
+  
