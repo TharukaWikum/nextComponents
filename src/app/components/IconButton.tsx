@@ -40,15 +40,16 @@ const IconButton: React.FC<IconButtonProps> = ({
           fontWeight: 500,
           fontSize: "12px", // Increase button font size
         //   padding: "16px 16px", // Increase button padding
-        width:"34px",
-        height:"34px"
+        width:"38px",
+        height:"38px"
         }
       : {};
 
-  const defaultIconColor = iconColor === "" ? (theme === "dark" ? "#3380FF" : "#000000") : "#3380FF"; // Default to black or #3380FF
+  const defaultIconColor = iconColor === "" ? (theme === "dark" ? "#3380FF" : "#5A5A5A") : "#3380FF"; // Default to black or #3380FF
   const iconStyle: React.CSSProperties = {
-    fontSize: "20px", // Increase icon font size
-    paddingTop:'2px',
+    fontSize: "18px", // Increase icon font size
+    // paddingTop:'2px',
+    padding:'4px',
     color: defaultIconColor, // Use defaultIconColor
   };
 
