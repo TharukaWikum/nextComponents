@@ -1,0 +1,82 @@
+
+.input-field-container {
+    position: relative;
+    padding-top: 36px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .input-label {
+    position: absolute;
+    padding-left: 20px;
+    top: 0; 
+    left: 0;
+    font-size: 23px;
+    pointer-events: none; /* Prevent label from interfering with input */
+    transition: none; /* Add a transition for smooth animation */
+  }
+  
+  
+  .input-field {
+    
+    height: 55px;
+    max-width: 440px;
+    font-size: 23px;
+    background-color: transparent;
+    border: 1px solid #666;
+    
+  }
+
+ [data-theme='dark'] .input-field{
+  border-color:  #FFFFFF; 
+  }
+
+
+  .ant-input ,.input-field {
+    background-color: transparent; /* Set the background to transparent */
+  }
+
+  [data-theme='light'] .ant-input{
+    color: #000000;
+  }
+  
+  /* For dark theme, set text color to white */
+  [data-theme='dark'] .ant-input {
+    color: #FFFFFF;
+  }
+
+
+  .ant-input::placeholder {
+    color: gray;
+  }
+  
+  /* Dark Theme Placeholder Color */
+  [data-theme='dark']  .ant-input::placeholder {
+    color: white;
+  }
+
+  
+  .input-field-bottom-border {
+    border: none; /* Remove the default border */
+    border-bottom: 1px solid #666; /* Add a bottom border */
+    padding: 5px 0; /* Add padding to separate the border from the input content */
+    max-width: 440px;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  [data-theme='dark'] .input-field-bottom-border{
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+
+  .password-toggle-button {
+    position: absolute;
+    right: 10px; /* Adjust the right position as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
