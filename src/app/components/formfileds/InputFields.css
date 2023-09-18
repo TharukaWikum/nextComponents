@@ -5,13 +5,15 @@
     padding-bottom: 20px;
     padding-left: 20px;
   }
+
+  
   
   .input-label {
     position: absolute;
     padding-left: 20px;
     top: 0; 
     left: 0;
-    font-size: 23px;
+    font-size: 16px;
     pointer-events: none; /* Prevent label from interfering with input */
     transition: none; /* Add a transition for smooth animation */
   }
@@ -21,10 +23,14 @@
     
     height: 55px;
     max-width: 440px;
-    font-size: 23px;
+    font-size: 15px;
     background-color: transparent;
     border: 1px solid #666;
     
+  }
+
+  .input-field.warning {
+    border-color:#FFD600; /* Change border color to yellow for warning state */
   }
 
  [data-theme='dark'] .input-field{
@@ -43,11 +49,14 @@
   /* For dark theme, set text color to white */
   [data-theme='dark'] .ant-input {
     color: #FFFFFF;
+    
+    
   }
 
 
   .ant-input::placeholder {
     color: gray;
+    padding-left: 8px;
   }
   
   /* Dark Theme Placeholder Color */
@@ -62,11 +71,16 @@
     padding: 5px 0; /* Add padding to separate the border from the input content */
     max-width: 440px;
     border-radius: 0;
+    font-size: 20px;
     background-color: transparent;
   }
 
   [data-theme='dark'] .input-field-bottom-border{
     border-bottom: 1px solid #FFFFFF;
+  }
+
+  [data-theme='dark'] .input-field.warning {
+    border-color:#FFD600; /* Change border color to yellow for warning state */
   }
 
 
