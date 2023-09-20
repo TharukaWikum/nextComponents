@@ -1,19 +1,22 @@
+@import '../../globals.css';
+
 .input-field-container {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
-  padding-top: 36px;
-  padding-bottom: 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   padding-left: 20px;
 }
 
 .input-label {
-  
   position: absolute;
   padding-left: 20px;
+  padding-bottom: 10px;
   top: 0;
   left: 0;
   font-size: 16px;
   pointer-events: none;
+  color: var(--text-color);
   /* Prevent label from interfering with input */
   transition: none;
   /* Add a transition for smooth animation */
@@ -24,89 +27,49 @@
   max-width: 440px;
   font-size: 15px;
   background-color: transparent;
-  border: 1px solid #666;
-  
+  border: 1px solid;
+  border-color: var(--border-color);
+  box-shadow: none;
 }
 
+
+
 .input-field .ant-input-suffix .anticon {
-  font-size: 20px;
- 
+  font-size: 15px;
+  color: var(--text-color);
 }
 
 /* Set the color for the suffixIcon based on the theme */
 .input-field .ant-input-prefix .anticon {
-  color: #000000;
+  color: var(--text-color);
+  font-size: 20px;
   /* Default color for light theme */
 }
-
-/* Define color for dark theme */
-[data-theme="dark"] .input-field .ant-input-prefix .anticon {
-  color: #ffffff;
-}
-
-/* Set the color for the suffixIcon based on the theme */
-.input-field .ant-input-suffix .anticon {
-  color: #000000;
-  /* Default color for light theme */
-}
-
-/* Define color for dark theme */
-[data-theme="dark"] .input-field .ant-input-suffix .anticon {
-  color: #ffffff;
-}
-
-
-
-
-
 
 .input-field.error {
-  border-color: #FF5151;
+  border-color: var(--error-color);
   /* Change border color to yellow for warning state */
 }
 
 .input-field.error .ant-input-suffix .anticon {
   font-size: 20px;
-  color: #FF5151;
+  color: var(--error-color);
 }
-
-
-/* Define color for dark theme */
-[data-theme="dark"] .input-field.error .ant-input-suffix .anticon {
-  
-  color: #FF5151;
-}
-
 
 .error-message {
-  color: #FF5151; /* Set the color of the warning message */
+  color: var(--error-color); /* Set the color of the warning message */
   font-size: 15px; /* Set the font size of the warning message */
   margin-top: 5px; /* Adjust the spacing between the input field and the warning message */
 }
 
-
-
-
-
-
-
 .input-field.warning {
-  border-color: #ffd600;
+  border-color: var(--warning-color);
   /* Change border color to yellow for warning state */
 }
 
 .input-field.warning .ant-input-suffix .anticon {
-  color: #ffd600;
+  color: var(--warning-color);
   font-size: 20px;
-}
-
-[data-theme="dark"] .input-field {
-  border-color: #ffffff;
-}
-
-/* Define color for dark theme */
-[data-theme="dark"] .input-field.warning .ant-input-suffix .anticon {
-  color: #ffd600;
 }
 
 .ant-input,
@@ -115,57 +78,29 @@
   /* Set the background to transparent */
 }
 .warning-message {
-  color: #ffd600; /* Set the color of the warning message */
+  color: var(--warning-color); /* Set the color of the warning message */
   font-size: 15px; /* Set the font size of the warning message */
   margin-top: 5px; /* Adjust the spacing between the input field and the warning message */
 }
 
-[data-theme="light"] .ant-input {
-  color: #000000;
-}
-
-/* For dark theme, set text color to white */
-[data-theme="dark"] .ant-input {
-  color: #ffffff;
-}
-
 .ant-input::placeholder {
-  color: gray;
+  color: var(--text-color);
   padding-left: 8px;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Dark Theme Placeholder Color */
-[data-theme="dark"] .ant-input::placeholder {
-  color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .input-field-bottom-border {
   border: none;
   /* Remove the default border */
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid;
+  border-color: var(--border-color);
   /* Add a bottom border */
   padding: 5px 0;
   /* Add padding to separate the border from the input content */
   max-width: 440px;
   border-radius: 0;
-  font-size: 20px;
+  font-size: 15px;
   background-color: transparent;
-}
-
-[data-theme="dark"] .input-field-bottom-border {
-  border-bottom: 1px solid #ffffff;
-}
-
-[data-theme="dark"] .input-field.warning {
-  border-color: #ffd600;
-  /* Change border color to yellow for warning state */
-}
-
-[data-theme="dark"] .input-field.error {
-  border-color: #FF5151;
-  /* Change border color to yellow for warning state */
 }
 
 .password-toggle-button {

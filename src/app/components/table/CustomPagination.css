@@ -1,0 +1,185 @@
+@import '/src/app/globals.css';
+
+/* CustomPagination.css */
+
+
+.ant-pagination {
+    display: inline-block;
+    padding: 4px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .custom-pagination-variant-no-border {
+    /* Add styles for the variant here */
+    border: none; /* Remove borders */
+    /* Add any other styles specific to this variant */
+  }
+  
+  .ant-pagination .ant-pagination-item {
+    background-color: transparent; /* Set background color for page numbers to white */
+    border: 1px solid ; /* Add border to page numbers */
+    border-color: var(--pg-border-color);
+    color: var(--pg-text-color); /* Set text color for all page numbers to white */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+
+  .ant-pagination .ant-pagination-item a{
+    border-radius: 2px;
+    background-color: transparent; /* Set background color for page numbers to white */
+     /* Add border to page numbers */
+    color: var(--pg-a-text-color); /* Set text color for all page numbers to white */
+    font-weight: 400;
+} 
+  
+
+
+  .ant-pagination .ant-pagination-item-active a {
+    background-color: var(--pg-active-a-backgroud-color);
+  color: var(--pg-active-a-text-color);
+}
+
+.ant-pagination .ant-pagination-item-active a:hover,
+.ant-pagination .ant-pagination-item-active a:focus {
+    background-color: var(--pg-active-a-backgroud-hover-color);
+  color: var(--pg-active-a-text-hover-color);
+}
+
+  
+  
+
+
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    font-weight: 600;
+    background-color: transparent; /* Set background color for next and previous buttons */
+    border: 1px solid ; /* Add border to next and previous buttons */
+    border-color: var(--pg-move-border-color);
+    
+  }
+
+  .ant-pagination .ant-pagination-disabled svg{
+    color: var(--pg-move-disable-color);
+  }
+
+  .ant-pagination svg{
+    color: var(--pg-move-enable-color);
+  }
+
+  .ant-pagination .ant-pagination-item-ellipsis {
+    color: var(--pg-move-disable-color) !important;
+  }
+  .ant-pagination-item-container svg{
+    color: var(--pg-move-color);
+  }
+
+ 
+  
+  .ant-pagination .ant-pagination-prev:focus,
+  .ant-pagination .ant-pagination-prev:hover,
+  .ant-pagination .ant-pagination-next:focus,
+  .ant-pagination .ant-pagination-next:hover {
+    background-color: none;
+    border-color: none;
+  }
+
+
+
+
+
+  /* CustomPagination.css */
+
+
+/* New variant pgv2 with no borders */
+.pgv2 .ant-pagination-item {
+    background-color: transparent;
+    border: none; /* Remove borders for page numbers */
+  }
+  
+  /* .pgv2 .ant-pagination-item-active a {
+    background-color: #1890ff;
+    color: #ffffff;
+  } */
+  
+  /* .pgv2 .ant-pagination-item-active a:hover,
+  .pgv2 .ant-pagination-item-active a:focus {
+    background-color: #1890ff;
+    color: #ffffff;
+  } */
+  
+  .pgv2 .ant-pagination-prev,
+  .pgv2 .ant-pagination-next {
+    /* background-color: transparent; */
+    border: none; /* Remove borders for next and previous buttons */
+  }
+
+
+
+
+
+
+  /* New variant pgv2 with no borders */
+.pgv3 .ant-pagination-item {
+    
+    /* background-color: transparent; */
+    border: none; /* Remove borders for page numbers */
+  }
+
+  .pgv3 .ant-pagination-item a{
+    color: var(--pg3-active-a-text-color);
+  }
+  
+  .pgv3 .ant-pagination-item-active a {
+    background-color: transparent;
+    border: 1px solid;
+    /* border-color: ; */
+    color: var(--pg-a-text-color);
+  }
+  
+    .pgv3 .ant-pagination-item-active a:hover,
+  .pgv3 .ant-pagination-item-active a:focus {
+    background-color: transparent;
+    color: var(--pg3-active-a-text-hover-color);
+  }
+
+  .pgv3 .ant-pagination-prev,
+  .pgv3 .ant-pagination-next {
+    background-color: transparent;
+    border: none; 
+  }
+
+
+
+
+
+  .pgv4 .ant-pagination-item{
+    border-color: var(--pg4-a-text-color);
+    
+  }
+  .pgv4 .ant-pagination-item a{
+    border-color: var(--pg4-a-text-color);
+    color: var(--pg4-a-text-color);
+  }
+  .pgv4 .ant-pagination-item-active{
+    border-color: var(--pg-active-a-backgroud-color);
+  }
+  .pgv4 .ant-pagination-item-active a{
+    color: var(--pg-text-color);
+  }
+
+  .pgv4 .ant-pagination-item-active a:hover,
+  .pgv4 .ant-pagination-item-active a:focus {
+    background-color: var(--pg-active-a-backgroud-color);
+  }
+   
+
+  .pgv4 .ant-pagination-prev,
+  .pgv4 .ant-pagination-next {
+    background-color: transparent;
+    border: none;
+    color: var(--pg-move-disable-color); 
+  }
+  
+  
+

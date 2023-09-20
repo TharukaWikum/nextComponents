@@ -47,23 +47,18 @@ export default function Home() {
       </p>
       <br />
       <p>
-        <IconButton variant="eyeTwoTone"/>
-      <IconButton variant="eyeTwoTone" bg="filled" />
-      <IconButton variant="eyeTwoTone" iconColor="colored"/>
-      <IconButton variant="eyeTwoTone" bg="filled" iconColor="colored"/>
+        <IconButton variant="eye"/>
+      <IconButton variant="eye" iconColor="colored"/>
       <br />
       <IconButton variant="heart"/>
-      <IconButton variant="heart" bg="filled" />
       <IconButton variant="heart" iconColor="colored"/>
-      <IconButton variant="heart" bg="filled" iconColor="colored"/>
       <br />
       <IconButton variant="plus"/>
       <IconButton variant="plus" iconColor="colored"/>
       <br />
       <IconButton variant="delete"/>
-      <IconButton variant="delete" bg="filled" />
       <IconButton variant="delete" iconColor="colored"/>
-      <IconButton variant="delete" bg="filled" iconColor="colored"/>
+      
       </p>
     </div>
   );

@@ -135,7 +135,7 @@ const MyForm: React.FC = () => {
     console.log("Form data submitted:", formData);
   };
 
-  const isUsernameInvalid = false; // Set to true to demonstrate the warning border color
+  const isUsernameInvalid = true; // Set to true to demonstrate the warning border color
 
   return (
     <form onSubmit={handleSubmit}>
@@ -210,6 +210,7 @@ const MyForm: React.FC = () => {
         onChange={handleChange}
         variant="bottom-border"
         warning={isUsernameInvalid}
+        warningMessage ="Warning"
       />
       <button type="submit">Submit</button>
     </form>

@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light Theme Colors */
+:root {
+  /* --background-color: #F0F0F0; */
+  --text-color: #000000;
+  --border-color:#000000;
+  --error-color: #FF5151;
+  --warning-color: #ffd600;
+
+
+
+/* --pagination-color: #F0F0F0; */
+--pg-border-color:#66B2FF;
+--pg-text-color:#ffffff;
+--pg-a-text-color:#66B2FF;
+--pg-active-a-backgroud-color:#66B2FF;
+--pg-active-a-text-color:#ffffff;
+--pg-active-a-backgroud-hover-color:#66B2FF;
+--pg-active-a-text-hover-color:#ffffff;
+
+--pg-move-border-color:#bcbcbc;
+--pg-move-disable-color:#bcbcbc;
+--pg-move-enable-color:#66B2FF;
+
+--pg3-active-a-text-color:#000000;
+--pg3-active-a-text-hover-color:#66B2FF;
+
+--pg4-a-text-color:#BCBCBC;
+
+
+
+
+}
+
+/* Dark Theme Colors */
+[data-theme="dark"] {
+  --text-color: #ffffff;
+  --border-color:#ffffff;
+  --error-color: #FF5151;
+  --warning-color: #ffd600;
+
+  /* pagination color */
+  --pg3-active-a-text-color:#AFAFAF;
+  --pg-move-color:#ffffff;
+
+  --pg4-active-a-text-color:#AFAFAF
+}
+
 body{
   color: black;
   background-color: white;
@@ -9,7 +56,8 @@ body{
 }
 
 [data-theme="dark"] body{
-  background-color:
-  #0D243C;
+  background-color:#0D243C;
   color: white;
 }
+
+

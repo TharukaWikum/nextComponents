@@ -1,6 +1,7 @@
-:root {
-  --custom-dark-theme-color: #132F4C;
-}
+@import url('/src/app/globals.css');
+
+
+
 
 /* Define styles for dark theme */
 [data-theme="dark"] {

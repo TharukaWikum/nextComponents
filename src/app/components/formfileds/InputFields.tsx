@@ -391,9 +391,9 @@ interface InputFieldProps {
   variant?: 'default' | 'bottom-border';
   icon?: 'user' | 'pwd' | 'email';
   warning?: boolean;
-  warningMessage?: string;
+  warningMessage?: string | "Warning";
   error?: boolean;
-  errorMessage?: string;
+  errorMessage?: string |"Error";
 }
 
 const InputField: React.FC<InputFieldProps> = ({
