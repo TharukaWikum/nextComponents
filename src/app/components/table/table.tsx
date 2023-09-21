@@ -1,36 +1,55 @@
-// "use client"
-import React from 'react';
+
+
+// table.tsx
+import React, { useState } from 'react';
 import { Table } from 'antd';
 import { ColumnProps } from 'antd/lib/table';
-import CustomPagination from './Pagination'; // Import your custom pagination component
+import CustomPagination from './Pagination'; // Import custom pagination component
 
 // Define a type constraint for the 'T' type parameter
 type AnyObject = Record<string, any>;
 
 interface ReusableTableProps<T extends AnyObject> {
-  dataSource: T[];
+  data: T[];
   columns: ColumnProps<T>[];
-  total: number; // Add total prop for total items
   pageSize?: number;
   pgVariant?: string;
-  onPageChange: (page: number, pageSize: number) => void; // Make onPageChange a required property
 }
 
 function ReusableTable<T extends AnyObject>(props: ReusableTableProps<T>) {
-  const { dataSource, columns, total, pgVariant, pageSize = 10, onPageChange } = props;
+  const { data, columns, pgVariant, pageSize = 10 } = props;
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const total = data.length; // Calculate the total based on dataSource
+
+  const onPageChange = (page: number) => {
+    setCurrentPage(page);
+    // You can perform any other actions related to pagination here
+  };
+
+  const pageData = data
+    .slice((currentPage - 1) * pageSize, currentPage * pageSize)
+    .map((item) => ({
+      ...item,
+      key: item.id, // Assuming 'id' is a unique identifier for each item
+    }));
 
   const paginationConfig = {
     pageSize,
     total,
+    current: currentPage,
     onChange: onPageChange,
   };
 
   return (
     <>
-      <Table<T> dataSource={dataSource} columns={columns} pagination={false} />
+      <Table<T> dataSource={pageData} columns={columns} pagination={false} />
       <CustomPagination {...paginationConfig} pgVariant={pgVariant} />
     </>
   );
 }
 
 export default ReusableTable;
+
+

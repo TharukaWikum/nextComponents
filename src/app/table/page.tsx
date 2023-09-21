@@ -1,19 +1,10 @@
+
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import ReusableTable from "../components/table/table";
 import data from "./data"; // Import your data source
 
-function App() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 10;
-  const totalItems = data.length; // for pagination
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    // You can perform any other actions related to pagination here
-  };
-
-  // Define the columns for your table
+function Page() {
   const columns = [
     {
       title: "ID",
@@ -33,23 +24,18 @@ function App() {
     // Add more columns as needed
   ];
 
+  const pageSize = 10; // Specify your desired page size
+
   return (
     <div>
       <ReusableTable
-        dataSource={data
-          .slice((currentPage - 1) * pageSize, currentPage * pageSize)
-          .map((item) => ({
-            ...item,
-            key: item.id, // Assuming 'id' is a unique identifier for each item
-          }))}
+        data={data}
         columns={columns}
-        total={totalItems}
         pageSize={pageSize}
         pgVariant='pgv4'
-        onPageChange={handlePageChange}
       />
     </div>
   );
 }
 
-export default App;
+export default Page;
