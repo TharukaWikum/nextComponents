@@ -126,7 +126,20 @@ body{
 
 
  
+  .avatar {
+    width: 36px; /* Specify the desired width */
+    height: 36px; /* Specify the desired height */
+    font-size: 32px; /* Specify the desired font size for the icon (optional) */
+    background-color: #C4C4C4 ;
+    color: black;
+    margin-right: 2px;
+  }
 
+
+  .edit-icon {
+    font-size: 21px; /* Adjust the font size as needed */
+    color: var(--edit-icon-color);
+  }
   
 
 
