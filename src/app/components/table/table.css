@@ -1,0 +1,74 @@
+@import '/src/app/globals.css';
+
+
+
+
+body {
+  margin: 20px;
+  
+}
+
+.ant-table{
+  border: 1px solid var(--tb-row-border-color);
+  border-radius: 10px;
+}
+
+.ant-table-body {
+  min-height: 900px; /* Adjust the value as needed */
+}
+
+/* Center-align the text in the table header */
+.ant-table-thead > tr > th {
+  text-align: center !important;
+}
+
+/* Center-align the text in the table body */
+.ant-table .ant-table-tbody  {
+  text-align: center !important;
+}
+
+.ant-table-thead > tr > th {
+  background-color: var(--tb-head-bg-color) !important;
+  color: var(--tb-text-color) !important;
+  border-right: none !important;
+  font-size: var(--tb-head-font-size);
+}
+
+.ant-table .ant-table-tbody  {
+  background-color: var(--tb-bg-color) !important;
+  color: var(--text-color) !important;
+  font-size: var(--tb-body-font-size);;
+}
+
+.ant-table-thead > tr > th.ant-table-cell::before {
+  display: none !important;
+}
+
+
+/* Override Ant Design's default row hover styles */
+.ant-table-tbody > tr:hover > td {
+  background-color: transparent !important;
+  
+}
+
+/* Set selected row background color */
+.selected-row {
+  background-color: var(--tb-selected-row-color) !important;
+}
+
+/* Maintain selected row background color on hover */
+.selected-row:hover {
+  background-color: var(--tb-selected-row-color) !important;
+}
+
+/* Change the row border color */
+.ant-table-tbody > tr > td, .ant-table-thead > tr > th {
+  border-color: var(--tb-row-border-color) !important;
+}
+
+
+.pagination-container {
+  text-align: right;
+}
+
+

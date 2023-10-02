@@ -1,0 +1,139 @@
+@import '/src/app/globals.css';
+
+
+
+
+body{
+    margin: 20px;
+}
+
+.ant-table {
+  
+  border: 1px solid ;
+  border-color: var(--adtb-row-border-color) ;
+  border-radius: 10px;
+  border-bottom: none;
+}
+
+
+.ant-table-body {
+  min-height: 900px; /* Adjust the value as needed */
+ 
+}
+
+/* Center-align the text in the table header */
+.ant-table-thead > tr > th {
+  text-align: center !important;
+  border-bottom-color: var(--adtb-row-border-color) !important;
+
+ 
+}
+
+.ant-table-tbody > tr > td {
+    /* border: 1px solid red !important; */
+    border-color: var(--adtb-row-border-color) !important;
+   
+  }
+  
+
+/* Center-align the text in the table body */
+.ant-table .ant-table-tbody  {
+  text-align: center !important;
+ 
+
+}
+
+.ant-table .ant-table-tbody .ant-table-row-selected{
+    background-color: var(--tb-selected-row-color)!important;
+
+}
+
+.ant-table-row-selected .ant-table-cell{
+    background-color:var(--tb-selected-row-color) !important;
+    border-color: var(--adtb-row-border-color) !important;
+   
+    
+}
+
+
+.ant-table-thead > tr > th {
+    background-color: var(--tb-head-bg-color) !important;
+    color: var(--tb-text-color) !important;
+    border-right: none !important;
+    font-size: var(--tb-head-font-size);
+    
+   
+  }
+
+.ant-table .ant-table-tbody  {
+  background-color: var(--tb-bg-color) !important;
+  color: var(--text-color) !important;
+  font-size: var(--tb-body-font-size);
+  
+  
+}
+
+
+
+.ant-table-thead > tr > th.ant-table-cell::before {
+  display: none !important;
+  border-color: var(--adtb-row-border-color) 
+  
+}
+
+
+/* Override Ant Design's default row hover styles */
+.ant-table-tbody > tr:hover > td {
+  background-color: transparent !important;
+ 
+}
+
+
+
+
+.ant-checkbox-inner {
+    background-color: transparent !important;
+    /* border-color: var(--adtb-checkbox-color) !important;
+    border-width: 4px solid !important; */
+    border: 2px solid var(--adtb-checkbox-color) !important;
+    font-size: 21px !important;
+    width: 20px !important;
+    height: 20px !important;
+    
+
+  }
+
+
+  .ant-checkbox-checked .ant-checkbox-inner::before {
+    border-color: var(--adtb-checkbox-color) !important; 
+  }
+  
+  .ant-checkbox-checked .ant-checkbox-inner::after {
+    border-color: var(--adtb-checkbox-color) !important; 
+  }
+
+  .ant-table-row{
+    background-color: transparent;
+   
+  }
+
+  .label{
+    color: var(--label-text-color);
+    border-color: var(--label-border-color);
+    background-color: var(--label-bg-color);
+  }
+
+
+
+ 
+
+  
+
+
+
+.pagination-container {
+  text-align: right;
+}
+
+
+

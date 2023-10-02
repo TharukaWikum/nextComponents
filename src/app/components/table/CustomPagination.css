@@ -97,17 +97,7 @@
     border: none; /* Remove borders for page numbers */
   }
   
-  /* .pgv2 .ant-pagination-item-active a {
-    background-color: #1890ff;
-    color: #ffffff;
-  } */
-  
-  /* .pgv2 .ant-pagination-item-active a:hover,
-  .pgv2 .ant-pagination-item-active a:focus {
-    background-color: #1890ff;
-    color: #ffffff;
-  } */
-  
+
   .pgv2 .ant-pagination-prev,
   .pgv2 .ant-pagination-next {
     /* background-color: transparent; */
@@ -135,13 +125,9 @@
     border: 1px solid;
     /* border-color: ; */
     color: var(--pg-a-text-color);
+    pointer-events: none;
   }
-  
-    .pgv3 .ant-pagination-item-active a:hover,
-  .pgv3 .ant-pagination-item-active a:focus {
-    background-color: transparent;
-    color: var(--pg3-active-a-text-hover-color);
-  }
+
 
   .pgv3 .ant-pagination-prev,
   .pgv3 .ant-pagination-next {
@@ -166,6 +152,7 @@
   }
   .pgv4 .ant-pagination-item-active a{
     color: var(--pg-text-color);
+    
   }
 
   .pgv4 .ant-pagination-item-active a:hover,

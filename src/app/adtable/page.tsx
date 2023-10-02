@@ -1,7 +1,7 @@
 
 "use client";
 import React from "react";
-import ReusableTable from "../components/table/table";
+import ReusableTable from "../components/table/adtable";
 import data from "./data"; // Import your data source
 
 function Page() {
@@ -26,6 +26,12 @@ function Page() {
 
   const pageSize = 10; // Specify your desired page size
 
+  const columnTags = {
+    id:true,
+    name: true, // Render "Name" column as a Tag
+    // Add more columns and their tag rendering flags as needed
+  };
+
   return (
     <div>
       <ReusableTable
@@ -34,9 +40,9 @@ function Page() {
         pageSize={pageSize}
         pgVariant='pgv4'
         onSelectRow={(selectedRow) => {
-            // Handle row selection here
-            console.log('Selected Row:', selectedRow);
-          }}
+          console.log('Selected Row:', selectedRow);
+        }}
+        columnTags={columnTags} // Pass the columnTags prop
       />
     </div>
   );

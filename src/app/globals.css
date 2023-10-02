@@ -4,7 +4,7 @@
 
 /* Light Theme Colors */
 :root {
-  /* --background-color: #F0F0F0; */
+  /* --background-color*/
   --text-color: #000000;
   --border-color:#000000;
   --error-color: #FF5151;
@@ -12,7 +12,7 @@
 
 
 
-/* --pagination-color: #F0F0F0; */
+/* --pagination-color */
 --pg-border-color:#66B2FF;
 --pg-text-color:#ffffff;
 --pg-a-text-color:#66B2FF;
@@ -32,6 +32,23 @@
 
 
 
+/* table color */
+--tb-head-bg-color:#F0F7FF;
+--tb-bg-color: #ffffff;
+--tb-selected-row-color:#1f79a3;
+--tb-text-color:#000000;
+--tb-row-border-color:#EAF0F5;
+--tb-head-font-size:14px;
+--tb-body-font-size:14px;
+
+
+/* adtable color */
+--adtb-row-border-color:#EAF0F5;
+--adtb-checkbox-color:#66B2FF;
+/* label */
+--label-text-color:#0078D4;
+--label-border-color:#E4F0FB;
+--label-bg-color:#E4F0FB;
 
 }
 
@@ -46,7 +63,22 @@
   --pg3-active-a-text-color:#AFAFAF;
   --pg-move-color:#ffffff;
 
-  --pg4-active-a-text-color:#AFAFAF
+  --pg4-active-a-text-color:#AFAFAF;
+
+
+/* table color */
+--tb-bg-color: #0D243C;
+--tb-text-color:#66B2FF;
+--tb-head-bg-color:#132F4C;
+--tb-row-border-color:#132F4C;
+
+/* adtable color */
+--adtb-row-border-color:#AABBEE;
+/* label */
+--label-text-color:#66B2FF;
+--label-border-color:#132F4C;
+--label-bg-color:#0A2745;
+
 }
 
 body{
@@ -59,5 +91,7 @@ body{
   background-color:#0D243C;
   color: white;
 }
+
+
 
 
