@@ -1,0 +1,139 @@
+@import "../../globals.css";
+
+.custom-label {
+    position: absolute;
+    top: -1px; 
+    left: 10px;
+    font-size: 12px; 
+    /* margin-bottom: -9px;  */
+    margin-left: 9px;
+    background-color: var(--dl-label-bg);
+    z-index: 1;
+    transition: color 0.3s;
+    
+    
+  }
+
+  .custom-label.focused-label {
+    color: #0078D4;
+    
+  }
+
+  .disabled-label {
+    pointer-events: none;  
+    color: var(--dl-disabled-color) !important;
+  }
+
+  .disabled-select .ant-select-selection-placeholder {
+    color: var(--dl-disabled-color) !important;
+  }
+
+  .disabled-select .ant-select-selector{
+    border-color: var(--dl-disabled-color) !important ;
+  }
+
+
+.custom-dropdown:hover .custom-label,
+.custom-dropdown:focus .custom-label {
+  color: #0078D4; 
+  
+}
+
+
+.ant-select-selection-placeholder{
+    color: var(--dl-selected-item-color) !important;
+  
+}
+
+  
+
+.custom-dropdown {
+position: relative;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column; 
+  max-width: 328px;
+  min-width: 200px;
+  margin: 12px;
+  margin-top: 30px;
+  height: 52px;
+  
+}
+
+.multiple-mode .ant-select-selection-search-input {
+    margin-top: -1px !important;
+    margin-left: -6px;
+  }
+
+  .ant-select-selection-overflow{
+    margin-left: -8px;
+  }
+
+.select-container {
+    position: relative;
+    display: inline-block;
+    
+  }
+
+.custom-select {
+  max-width: 328px;
+  min-width: 328px;
+  z-index: 0;
+}
+
+.ant-select-selector {
+  font-size: 16px !important;
+  font-family: "Poppins";
+  font-weight: 380;
+  height: 54px !important;
+  padding: 11px !important;
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+  transition: border-color 0.3s;
+  /* border-color: #00ff00 !important; */
+}
+
+
+.anticon-close{
+    color: var(--dl-anticon-close) !important;
+}
+
+
+.ant-select-dropdown {
+  background-color: var(--dl-option-bg-color) !important;
+}
+
+.ant-select-arrow {
+  color: var(--dl-arrow-color) !important;
+}
+.ant-select-open .ant-select-arrow {
+  color: var(--dl-arrow-color-hover) !important;
+}
+
+.ant-select-focused .ant-select-arrow:hover {
+  color: var(--dl-arrow-color-hover) !important;
+}
+
+.ant-select-item-option-content {
+  font-size: 16px !important ;
+  font-family: "Poppins";
+  font-weight: 380;
+  background-color: transparent !important;
+  color: var(--text-color);
+}
+
+.ant-select-item-option-selected {
+  background-color: var(--dl-select-bg-color) !important;
+}
+
+.ant-select-item-option:hover {
+  background-color: var(--dl-select-bg-color) !important; /* Change to your desired hover color */
+}
+
+.ant-select-selection-item {
+  color: var(--dl-selected-item-color) !important;
+  background-color: var(--dl-mlselect-bg)!important;
+}
+
+
